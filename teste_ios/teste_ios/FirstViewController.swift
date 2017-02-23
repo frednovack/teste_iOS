@@ -8,8 +8,19 @@
 
 import UIKit
 
-class FirstViewController: UIViewController {
 
+
+class FirstViewController: UIViewController {
+    
+    
+    @IBOutlet var menuBtnItem: UIBarButtonItem!
+    
+
+    @IBAction func TapMenuBtn(_ sender: Any) {
+        
+        menuBtnItem.action = #selector(SWRevealViewController.revealToggle(_:))
+        
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -25,6 +36,20 @@ class FirstViewController: UIViewController {
         self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName : UIColor.white]
         
         self.navigationController?.navigationBar.isTranslucent = false
+        
+        //config of the rear menu
+        
+       
+            menuBtnItem.target = self.revealViewController()
+            menuBtnItem.action = #selector(SWRevealViewController.revealToggle(_:))
+            self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
+            
+            
+        
+        
+        
+        
+        
         
    
     }
