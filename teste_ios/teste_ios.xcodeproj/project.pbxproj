@@ -13,6 +13,10 @@
 		B66134A21E5E695C00C52BCA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B66134A01E5E695C00C52BCA /* Main.storyboard */; };
 		B66134A41E5E695C00C52BCA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B66134A31E5E695C00C52BCA /* Assets.xcassets */; };
 		B66134A71E5E695C00C52BCA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B66134A51E5E695C00C52BCA /* LaunchScreen.storyboard */; };
+		B66134C11E5E7A9D00C52BCA /* barra_inferior in Resources */ = {isa = PBXBuildFile; fileRef = B66134BD1E5E7A9D00C52BCA /* barra_inferior */; };
+		B66134C21E5E7A9D00C52BCA /* ico_alert.png in Resources */ = {isa = PBXBuildFile; fileRef = B66134BE1E5E7A9D00C52BCA /* ico_alert.png */; };
+		B66134C31E5E7A9D00C52BCA /* ico_lupa.png in Resources */ = {isa = PBXBuildFile; fileRef = B66134BF1E5E7A9D00C52BCA /* ico_lupa.png */; };
+		B66134C41E5E7A9D00C52BCA /* menu in Resources */ = {isa = PBXBuildFile; fileRef = B66134C01E5E7A9D00C52BCA /* menu */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		B66134A31E5E695C00C52BCA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B66134A61E5E695C00C52BCA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B66134A81E5E695C00C52BCA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B66134BD1E5E7A9D00C52BCA /* barra_inferior */ = {isa = PBXFileReference; lastKnownFileType = folder; name = barra_inferior; path = teste_ios/barra_inferior; sourceTree = "<group>"; };
+		B66134BE1E5E7A9D00C52BCA /* ico_alert.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ico_alert.png; path = teste_ios/ico_alert.png; sourceTree = "<group>"; };
+		B66134BF1E5E7A9D00C52BCA /* ico_lupa.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ico_lupa.png; path = teste_ios/ico_lupa.png; sourceTree = "<group>"; };
+		B66134C01E5E7A9D00C52BCA /* menu */ = {isa = PBXFileReference; lastKnownFileType = folder; name = menu; path = teste_ios/menu; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +48,7 @@
 		B661348E1E5E695B00C52BCA = {
 			isa = PBXGroup;
 			children = (
+				B66134AE1E5E780400C52BCA /* Assets */,
 				B66134991E5E695C00C52BCA /* teste_ios */,
 				B66134981E5E695C00C52BCA /* Products */,
 			);
@@ -65,6 +74,25 @@
 				B66134A81E5E695C00C52BCA /* Info.plist */,
 			);
 			path = teste_ios;
+			sourceTree = "<group>";
+		};
+		B66134AE1E5E780400C52BCA /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				B66134B81E5E7A6A00C52BCA /* Images */,
+			);
+			name = Assets;
+			sourceTree = "<group>";
+		};
+		B66134B81E5E7A6A00C52BCA /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				B66134BD1E5E7A9D00C52BCA /* barra_inferior */,
+				B66134BE1E5E7A9D00C52BCA /* ico_alert.png */,
+				B66134BF1E5E7A9D00C52BCA /* ico_lupa.png */,
+				B66134C01E5E7A9D00C52BCA /* menu */,
+			);
+			name = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -99,6 +127,7 @@
 				TargetAttributes = {
 					B66134961E5E695C00C52BCA = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = V7CGV4HW42;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -126,9 +155,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B66134C21E5E7A9D00C52BCA /* ico_alert.png in Resources */,
+				B66134C31E5E7A9D00C52BCA /* ico_lupa.png in Resources */,
 				B66134A71E5E695C00C52BCA /* LaunchScreen.storyboard in Resources */,
 				B66134A41E5E695C00C52BCA /* Assets.xcassets in Resources */,
 				B66134A21E5E695C00C52BCA /* Main.storyboard in Resources */,
+				B66134C11E5E7A9D00C52BCA /* barra_inferior in Resources */,
+				B66134C41E5E7A9D00C52BCA /* menu in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,6 +295,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = V7CGV4HW42;
 				INFOPLIST_FILE = teste_ios/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "br.com.frednovack.teste-ios";
@@ -274,6 +308,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = V7CGV4HW42;
 				INFOPLIST_FILE = teste_ios/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "br.com.frednovack.teste-ios";

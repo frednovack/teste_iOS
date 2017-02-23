@@ -12,7 +12,21 @@ class FirstViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        //Configs all the screen style
+        let thatOrangeColor = UIColor.init(colorLiteralRed: 0.815, green: 0.3098, blue: 0.047, alpha: 1.0)
+        
+        self.view.backgroundColor = thatOrangeColor
+        
+        self.title = "Dashboard"
+        
+        self.navigationController?.navigationBar.barTintColor = thatOrangeColor
+        
+        self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName : UIColor.white]
+        
+        self.navigationController?.navigationBar.isTranslucent = false
+        
+   
     }
 
     override func didReceiveMemoryWarning() {
