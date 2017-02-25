@@ -8,13 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		395EC68D81FB6E5ACA7DBD43 /* Pods_teste_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D1BF3B892222D22466DC6DE /* Pods_teste_ios.framework */; };
+		B65C619F1E622A1500A65F3A /* GlobalTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65C619E1E622A1500A65F3A /* GlobalTabViewController.swift */; };
+		B65C61A11E62300700A65F3A /* ico_mensagem_menu@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B65C61A01E62300700A65F3A /* ico_mensagem_menu@2x.png */; };
 		B661349B1E5E695C00C52BCA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B661349A1E5E695C00C52BCA /* AppDelegate.swift */; };
 		B661349D1E5E695C00C52BCA /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B661349C1E5E695C00C52BCA /* FirstViewController.swift */; };
 		B661349F1E5E695C00C52BCA /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B661349E1E5E695C00C52BCA /* SecondViewController.swift */; };
 		B66134A21E5E695C00C52BCA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B66134A01E5E695C00C52BCA /* Main.storyboard */; };
 		B66134A41E5E695C00C52BCA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B66134A31E5E695C00C52BCA /* Assets.xcassets */; };
 		B66134A71E5E695C00C52BCA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B66134A51E5E695C00C52BCA /* LaunchScreen.storyboard */; };
-		B66134C11E5E7A9D00C52BCA /* barra_inferior in Resources */ = {isa = PBXBuildFile; fileRef = B66134BD1E5E7A9D00C52BCA /* barra_inferior */; };
 		B66134C21E5E7A9D00C52BCA /* ico_alert.png in Resources */ = {isa = PBXBuildFile; fileRef = B66134BE1E5E7A9D00C52BCA /* ico_alert.png */; };
 		B66134C31E5E7A9D00C52BCA /* ico_lupa.png in Resources */ = {isa = PBXBuildFile; fileRef = B66134BF1E5E7A9D00C52BCA /* ico_lupa.png */; };
 		B66134C41E5E7A9D00C52BCA /* menu in Resources */ = {isa = PBXBuildFile; fileRef = B66134C01E5E7A9D00C52BCA /* menu */; };
@@ -35,6 +36,8 @@
 		2D1BF3B892222D22466DC6DE /* Pods_teste_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_teste_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F7DC0EBC7DB54CA5C19DA8C /* Pods-teste_ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-teste_ios.release.xcconfig"; path = "Pods/Target Support Files/Pods-teste_ios/Pods-teste_ios.release.xcconfig"; sourceTree = "<group>"; };
 		90515F4EFE8A0FF7383D7F65 /* Pods-teste_ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-teste_ios.debug.xcconfig"; path = "Pods/Target Support Files/Pods-teste_ios/Pods-teste_ios.debug.xcconfig"; sourceTree = "<group>"; };
+		B65C619E1E622A1500A65F3A /* GlobalTabViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalTabViewController.swift; sourceTree = "<group>"; };
+		B65C61A01E62300700A65F3A /* ico_mensagem_menu@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ico_mensagem_menu@2x.png"; path = "teste_ios/barra_inferior/ico_mensagem_menu@2x.png"; sourceTree = "<group>"; };
 		B66134971E5E695C00C52BCA /* teste_ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = teste_ios.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B661349A1E5E695C00C52BCA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B661349C1E5E695C00C52BCA /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -43,7 +46,6 @@
 		B66134A31E5E695C00C52BCA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B66134A61E5E695C00C52BCA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B66134A81E5E695C00C52BCA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B66134BD1E5E7A9D00C52BCA /* barra_inferior */ = {isa = PBXFileReference; lastKnownFileType = folder; name = barra_inferior; path = teste_ios/barra_inferior; sourceTree = "<group>"; };
 		B66134BE1E5E7A9D00C52BCA /* ico_alert.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ico_alert.png; path = teste_ios/ico_alert.png; sourceTree = "<group>"; };
 		B66134BF1E5E7A9D00C52BCA /* ico_lupa.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ico_lupa.png; path = teste_ios/ico_lupa.png; sourceTree = "<group>"; };
 		B66134C01E5E7A9D00C52BCA /* menu */ = {isa = PBXFileReference; lastKnownFileType = folder; name = menu; path = teste_ios/menu; sourceTree = "<group>"; };
@@ -136,6 +138,7 @@
 		B66134B81E5E7A6A00C52BCA /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				B65C61A01E62300700A65F3A /* ico_mensagem_menu@2x.png */,
 				B6785B491E611CAB00E11CA9 /* ico_afiliados.png */,
 				B6785B4A1E611CAB00E11CA9 /* ico_dashboard.png */,
 				B6785B4B1E611CAB00E11CA9 /* ico_mensagem.png */,
@@ -144,7 +147,6 @@
 				B6785B4E1E611CAB00E11CA9 /* ico_minhas_vendas.png */,
 				B6785B4F1E611CAB00E11CA9 /* ico_notificacoes.png */,
 				B6785B501E611CAB00E11CA9 /* ico_sobre_o_app.png */,
-				B66134BD1E5E7A9D00C52BCA /* barra_inferior */,
 				B66134BE1E5E7A9D00C52BCA /* ico_alert.png */,
 				B66134BF1E5E7A9D00C52BCA /* ico_lupa.png */,
 				B66134C01E5E7A9D00C52BCA /* menu */,
@@ -158,6 +160,7 @@
 				B661349C1E5E695C00C52BCA /* FirstViewController.swift */,
 				B661349E1E5E695C00C52BCA /* SecondViewController.swift */,
 				B6785B471E6119BC00E11CA9 /* MenuTableViewController.swift */,
+				B65C619E1E622A1500A65F3A /* GlobalTabViewController.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -246,8 +249,8 @@
 				B6785B571E611CAB00E11CA9 /* ico_notificacoes.png in Resources */,
 				B66134A21E5E695C00C52BCA /* Main.storyboard in Resources */,
 				B6785B531E611CAB00E11CA9 /* ico_mensagem.png in Resources */,
-				B66134C11E5E7A9D00C52BCA /* barra_inferior in Resources */,
 				B6785B551E611CAB00E11CA9 /* ico_minha_conta.png in Resources */,
+				B65C61A11E62300700A65F3A /* ico_mensagem_menu@2x.png in Resources */,
 				B6785B521E611CAB00E11CA9 /* ico_dashboard.png in Resources */,
 				B66134C41E5E7A9D00C52BCA /* menu in Resources */,
 				B6785B561E611CAB00E11CA9 /* ico_minhas_vendas.png in Resources */,
@@ -315,6 +318,7 @@
 				B661349B1E5E695C00C52BCA /* AppDelegate.swift in Sources */,
 				B661349D1E5E695C00C52BCA /* FirstViewController.swift in Sources */,
 				B6B4318B1E5F1D8900D53311 /* SWRevealViewController.m in Sources */,
+				B65C619F1E622A1500A65F3A /* GlobalTabViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
