@@ -18,6 +18,16 @@
 		B66134C21E5E7A9D00C52BCA /* ico_alert.png in Resources */ = {isa = PBXBuildFile; fileRef = B66134BE1E5E7A9D00C52BCA /* ico_alert.png */; };
 		B66134C31E5E7A9D00C52BCA /* ico_lupa.png in Resources */ = {isa = PBXBuildFile; fileRef = B66134BF1E5E7A9D00C52BCA /* ico_lupa.png */; };
 		B66134C41E5E7A9D00C52BCA /* menu in Resources */ = {isa = PBXBuildFile; fileRef = B66134C01E5E7A9D00C52BCA /* menu */; };
+		B6785B461E61146B00E11CA9 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6785B451E61146B00E11CA9 /* TableViewController.swift */; };
+		B6785B481E6119BC00E11CA9 /* MenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6785B471E6119BC00E11CA9 /* MenuTableViewController.swift */; };
+		B6785B511E611CAB00E11CA9 /* ico_afiliados.png in Resources */ = {isa = PBXBuildFile; fileRef = B6785B491E611CAB00E11CA9 /* ico_afiliados.png */; };
+		B6785B521E611CAB00E11CA9 /* ico_dashboard.png in Resources */ = {isa = PBXBuildFile; fileRef = B6785B4A1E611CAB00E11CA9 /* ico_dashboard.png */; };
+		B6785B531E611CAB00E11CA9 /* ico_mensagem.png in Resources */ = {isa = PBXBuildFile; fileRef = B6785B4B1E611CAB00E11CA9 /* ico_mensagem.png */; };
+		B6785B541E611CAB00E11CA9 /* ico_meus_produtos.png in Resources */ = {isa = PBXBuildFile; fileRef = B6785B4C1E611CAB00E11CA9 /* ico_meus_produtos.png */; };
+		B6785B551E611CAB00E11CA9 /* ico_minha_conta.png in Resources */ = {isa = PBXBuildFile; fileRef = B6785B4D1E611CAB00E11CA9 /* ico_minha_conta.png */; };
+		B6785B561E611CAB00E11CA9 /* ico_minhas_vendas.png in Resources */ = {isa = PBXBuildFile; fileRef = B6785B4E1E611CAB00E11CA9 /* ico_minhas_vendas.png */; };
+		B6785B571E611CAB00E11CA9 /* ico_notificacoes.png in Resources */ = {isa = PBXBuildFile; fileRef = B6785B4F1E611CAB00E11CA9 /* ico_notificacoes.png */; };
+		B6785B581E611CAB00E11CA9 /* ico_sobre_o_app.png in Resources */ = {isa = PBXBuildFile; fileRef = B6785B501E611CAB00E11CA9 /* ico_sobre_o_app.png */; };
 		B6B4318B1E5F1D8900D53311 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6B4318A1E5F1D8900D53311 /* SWRevealViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -37,6 +47,16 @@
 		B66134BE1E5E7A9D00C52BCA /* ico_alert.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ico_alert.png; path = teste_ios/ico_alert.png; sourceTree = "<group>"; };
 		B66134BF1E5E7A9D00C52BCA /* ico_lupa.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ico_lupa.png; path = teste_ios/ico_lupa.png; sourceTree = "<group>"; };
 		B66134C01E5E7A9D00C52BCA /* menu */ = {isa = PBXFileReference; lastKnownFileType = folder; name = menu; path = teste_ios/menu; sourceTree = "<group>"; };
+		B6785B451E61146B00E11CA9 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		B6785B471E6119BC00E11CA9 /* MenuTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTableViewController.swift; sourceTree = "<group>"; };
+		B6785B491E611CAB00E11CA9 /* ico_afiliados.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ico_afiliados.png; path = teste_ios/menu/ico_afiliados.png; sourceTree = "<group>"; };
+		B6785B4A1E611CAB00E11CA9 /* ico_dashboard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ico_dashboard.png; path = teste_ios/menu/ico_dashboard.png; sourceTree = "<group>"; };
+		B6785B4B1E611CAB00E11CA9 /* ico_mensagem.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ico_mensagem.png; path = teste_ios/menu/ico_mensagem.png; sourceTree = "<group>"; };
+		B6785B4C1E611CAB00E11CA9 /* ico_meus_produtos.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ico_meus_produtos.png; path = teste_ios/menu/ico_meus_produtos.png; sourceTree = "<group>"; };
+		B6785B4D1E611CAB00E11CA9 /* ico_minha_conta.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ico_minha_conta.png; path = teste_ios/menu/ico_minha_conta.png; sourceTree = "<group>"; };
+		B6785B4E1E611CAB00E11CA9 /* ico_minhas_vendas.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ico_minhas_vendas.png; path = teste_ios/menu/ico_minhas_vendas.png; sourceTree = "<group>"; };
+		B6785B4F1E611CAB00E11CA9 /* ico_notificacoes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ico_notificacoes.png; path = teste_ios/menu/ico_notificacoes.png; sourceTree = "<group>"; };
+		B6785B501E611CAB00E11CA9 /* ico_sobre_o_app.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ico_sobre_o_app.png; path = teste_ios/menu/ico_sobre_o_app.png; sourceTree = "<group>"; };
 		B6B431881E5F1D8800D53311 /* teste_ios-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "teste_ios-Bridging-Header.h"; sourceTree = "<group>"; };
 		B6B431891E5F1D8900D53311 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SWRevealViewController.h; path = teste_ios/SWRevealViewController.h; sourceTree = "<group>"; };
 		B6B4318A1E5F1D8900D53311 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SWRevealViewController.m; path = teste_ios/SWRevealViewController.m; sourceTree = "<group>"; };
@@ -95,12 +115,12 @@
 			isa = PBXGroup;
 			children = (
 				B661349A1E5E695C00C52BCA /* AppDelegate.swift */,
-				B661349C1E5E695C00C52BCA /* FirstViewController.swift */,
-				B661349E1E5E695C00C52BCA /* SecondViewController.swift */,
+				B6785B421E610D1100E11CA9 /* Views */,
 				B66134A01E5E695C00C52BCA /* Main.storyboard */,
 				B66134A31E5E695C00C52BCA /* Assets.xcassets */,
 				B66134A51E5E695C00C52BCA /* LaunchScreen.storyboard */,
 				B66134A81E5E695C00C52BCA /* Info.plist */,
+				B6785B451E61146B00E11CA9 /* TableViewController.swift */,
 			);
 			path = teste_ios;
 			sourceTree = "<group>";
@@ -116,12 +136,30 @@
 		B66134B81E5E7A6A00C52BCA /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				B6785B491E611CAB00E11CA9 /* ico_afiliados.png */,
+				B6785B4A1E611CAB00E11CA9 /* ico_dashboard.png */,
+				B6785B4B1E611CAB00E11CA9 /* ico_mensagem.png */,
+				B6785B4C1E611CAB00E11CA9 /* ico_meus_produtos.png */,
+				B6785B4D1E611CAB00E11CA9 /* ico_minha_conta.png */,
+				B6785B4E1E611CAB00E11CA9 /* ico_minhas_vendas.png */,
+				B6785B4F1E611CAB00E11CA9 /* ico_notificacoes.png */,
+				B6785B501E611CAB00E11CA9 /* ico_sobre_o_app.png */,
 				B66134BD1E5E7A9D00C52BCA /* barra_inferior */,
 				B66134BE1E5E7A9D00C52BCA /* ico_alert.png */,
 				B66134BF1E5E7A9D00C52BCA /* ico_lupa.png */,
 				B66134C01E5E7A9D00C52BCA /* menu */,
 			);
 			name = Images;
+			sourceTree = "<group>";
+		};
+		B6785B421E610D1100E11CA9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B661349C1E5E695C00C52BCA /* FirstViewController.swift */,
+				B661349E1E5E695C00C52BCA /* SecondViewController.swift */,
+				B6785B471E6119BC00E11CA9 /* MenuTableViewController.swift */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 		B6B431871E5F1D6800D53311 /* Lib */ = {
@@ -200,11 +238,19 @@
 			files = (
 				B66134C21E5E7A9D00C52BCA /* ico_alert.png in Resources */,
 				B66134C31E5E7A9D00C52BCA /* ico_lupa.png in Resources */,
+				B6785B581E611CAB00E11CA9 /* ico_sobre_o_app.png in Resources */,
+				B6785B511E611CAB00E11CA9 /* ico_afiliados.png in Resources */,
 				B66134A71E5E695C00C52BCA /* LaunchScreen.storyboard in Resources */,
 				B66134A41E5E695C00C52BCA /* Assets.xcassets in Resources */,
+				B6785B541E611CAB00E11CA9 /* ico_meus_produtos.png in Resources */,
+				B6785B571E611CAB00E11CA9 /* ico_notificacoes.png in Resources */,
 				B66134A21E5E695C00C52BCA /* Main.storyboard in Resources */,
+				B6785B531E611CAB00E11CA9 /* ico_mensagem.png in Resources */,
 				B66134C11E5E7A9D00C52BCA /* barra_inferior in Resources */,
+				B6785B551E611CAB00E11CA9 /* ico_minha_conta.png in Resources */,
+				B6785B521E611CAB00E11CA9 /* ico_dashboard.png in Resources */,
 				B66134C41E5E7A9D00C52BCA /* menu in Resources */,
+				B6785B561E611CAB00E11CA9 /* ico_minhas_vendas.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,6 +310,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				B661349F1E5E695C00C52BCA /* SecondViewController.swift in Sources */,
+				B6785B461E61146B00E11CA9 /* TableViewController.swift in Sources */,
+				B6785B481E6119BC00E11CA9 /* MenuTableViewController.swift in Sources */,
 				B661349B1E5E695C00C52BCA /* AppDelegate.swift in Sources */,
 				B661349D1E5E695C00C52BCA /* FirstViewController.swift in Sources */,
 				B6B4318B1E5F1D8900D53311 /* SWRevealViewController.m in Sources */,
