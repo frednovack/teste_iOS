@@ -28,7 +28,7 @@ public struct MarginSettings {
     public var leftMargin:CGFloat = 5.0
     
     /// the mini margin between items, it is the seed to calculate the actual margin which is not less than
-    public var miniMarginBetweenItems:CGFloat  = 10.0
+    public var miniMarginBetweenItems:CGFloat  = 27.0
     
     /// the mini width appear for last item of current screen, set it 0 if you don't want any part of the last item appear on the right
     public var miniAppearWidthOfLastItem:CGFloat = 20.0

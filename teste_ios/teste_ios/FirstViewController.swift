@@ -68,14 +68,16 @@ class FirstViewController: UIViewController, UITableViewDataSource, UITableViewD
     
     
     internal func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-     let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        let cellIdentifier  = "cell"
+        var cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath)
      
         //First row must be ASHorizontalScrollView
         if indexPath.row == 0 {
-            var horizontalScrollView = ASHorizontalScrollView.init(frame: CGRect.init(x: 0, y: 0, width: tableView.frame.width, height: cell.frame.height))
+            let horizontalScrollView = ASHorizontalScrollView.init(frame: CGRect.init(x: 0, y: 0, width: cell.frame.width, height: cell.frame.height))
             
             //sample code of how to use this scroll view
-            horizontalScrollView.uniformItemSize = CGSize(width: 50, height: 50)
+            horizontalScrollView.uniformItemSize = CGSize(width: 74.4, height: 74.4)
+            
             //this must be called after changing any size or margin property of this class to get acurrate margin
             horizontalScrollView.setItemsMarginOnce()
             //create buttons for cell 1
@@ -86,7 +88,7 @@ class FirstViewController: UIViewController, UITableViewDataSource, UITableViewD
             //Loop creating buttons and  customizing them
             for i in 0...contacts.count - 1 {
                 
-                var aButton = CustomButton.init(frame: CGRect.init(x: 0, y: 0, width: 74.4, height: 74.4))
+                var aButton = CustomButton.init(frame: CGRect.init(x: 0, y: 0, width: 74, height: 74))
                 
                 //Choose a color depending of the index it's showing
                 switch i % contacts.count {
@@ -113,7 +115,8 @@ class FirstViewController: UIViewController, UITableViewDataSource, UITableViewD
             }
             
             horizontalScrollView.addItems(buttons)
-            
+            var x = horizontalScrollView.calculateMarginBetweenItems()
+
             
             cell.contentView.addSubview(horizontalScrollView)
             horizontalScrollView.translatesAutoresizingMaskIntoConstraints = false
@@ -123,6 +126,11 @@ class FirstViewController: UIViewController, UITableViewDataSource, UITableViewD
             
 
 
+            
+        }
+        else{
+            //cell must be message cell
+            
             
         }
      

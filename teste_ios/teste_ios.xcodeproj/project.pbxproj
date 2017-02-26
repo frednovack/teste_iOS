@@ -11,6 +11,7 @@
 		B65C619F1E622A1500A65F3A /* GlobalTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65C619E1E622A1500A65F3A /* GlobalTabViewController.swift */; };
 		B65C61A11E62300700A65F3A /* ico_mensagem_menu@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B65C61A01E62300700A65F3A /* ico_mensagem_menu@2x.png */; };
 		B65C61A31E626D5500A65F3A /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65C61A21E626D5500A65F3A /* CustomButton.swift */; };
+		B65C61A61E635CCC00A65F3A /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65C61A51E635CCC00A65F3A /* MessageCell.swift */; };
 		B661349B1E5E695C00C52BCA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B661349A1E5E695C00C52BCA /* AppDelegate.swift */; };
 		B661349D1E5E695C00C52BCA /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B661349C1E5E695C00C52BCA /* FirstViewController.swift */; };
 		B661349F1E5E695C00C52BCA /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B661349E1E5E695C00C52BCA /* SecondViewController.swift */; };
@@ -40,6 +41,7 @@
 		B65C619E1E622A1500A65F3A /* GlobalTabViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalTabViewController.swift; sourceTree = "<group>"; };
 		B65C61A01E62300700A65F3A /* ico_mensagem_menu@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ico_mensagem_menu@2x.png"; path = "teste_ios/barra_inferior/ico_mensagem_menu@2x.png"; sourceTree = "<group>"; };
 		B65C61A21E626D5500A65F3A /* CustomButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		B65C61A51E635CCC00A65F3A /* MessageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
 		B66134971E5E695C00C52BCA /* teste_ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = teste_ios.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B661349A1E5E695C00C52BCA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B661349C1E5E695C00C52BCA /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -95,6 +97,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		B65C61A41E635C9D00A65F3A /* Custom Components */ = {
+			isa = PBXGroup;
+			children = (
+				B65C61A21E626D5500A65F3A /* CustomButton.swift */,
+				B65C61A51E635CCC00A65F3A /* MessageCell.swift */,
+			);
+			name = "Custom Components";
+			sourceTree = "<group>";
+		};
 		B661348E1E5E695B00C52BCA = {
 			isa = PBXGroup;
 			children = (
@@ -125,7 +136,7 @@
 				B66134A51E5E695C00C52BCA /* LaunchScreen.storyboard */,
 				B66134A81E5E695C00C52BCA /* Info.plist */,
 				B6785B451E61146B00E11CA9 /* TableViewController.swift */,
-				B65C61A21E626D5500A65F3A /* CustomButton.swift */,
+				B65C61A41E635C9D00A65F3A /* Custom Components */,
 			);
 			path = teste_ios;
 			sourceTree = "<group>";
@@ -323,6 +334,7 @@
 				B661349D1E5E695C00C52BCA /* FirstViewController.swift in Sources */,
 				B6B4318B1E5F1D8900D53311 /* SWRevealViewController.m in Sources */,
 				B65C619F1E622A1500A65F3A /* GlobalTabViewController.swift in Sources */,
+				B65C61A61E635CCC00A65F3A /* MessageCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
