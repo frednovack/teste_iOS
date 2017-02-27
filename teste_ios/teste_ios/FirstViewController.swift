@@ -23,6 +23,7 @@ class FirstViewController: UIViewController, UITableViewDataSource, UITableViewD
         menuBtnItem.action = #selector(SWRevealViewController.revealToggle(_:))
         
     }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -63,18 +64,24 @@ class FirstViewController: UIViewController, UITableViewDataSource, UITableViewD
     
         func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
             // #warning Incomplete implementation, return the number of rows
-            return 1
+            return 3
         }
     
     
     internal func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cellIdentifier  = "cell"
-        var cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath)
-     
+
         //First row must be ASHorizontalScrollView
+        let cell = tableView.dequeueReusableCell(withIdentifier: "messageCell", for: indexPath)   as? MessageCell
+        
+
+
+        
         if indexPath.row == 0 {
-            let horizontalScrollView = ASHorizontalScrollView.init(frame: CGRect.init(x: 0, y: 0, width: cell.frame.width, height: cell.frame.height))
             
+            
+            let horizontalScrollView = ASHorizontalScrollView.init(frame: CGRect.init(x: 0, y: 0, width: 100, height: 100))
+            
+
             //sample code of how to use this scroll view
             horizontalScrollView.uniformItemSize = CGSize(width: 74.4, height: 74.4)
             
@@ -115,26 +122,27 @@ class FirstViewController: UIViewController, UITableViewDataSource, UITableViewD
             }
             
             horizontalScrollView.addItems(buttons)
-            var x = horizontalScrollView.calculateMarginBetweenItems()
-
             
-            cell.contentView.addSubview(horizontalScrollView)
+            cell?.contentView.addSubview(horizontalScrollView)
             horizontalScrollView.translatesAutoresizingMaskIntoConstraints = false
-            cell.contentView.addConstraint(NSLayoutConstraint.init(item: horizontalScrollView, attribute: NSLayoutAttribute.height, relatedBy: NSLayoutRelation.equal, toItem: nil, attribute: NSLayoutAttribute.notAnAttribute, multiplier: 1, constant: cell.frame.height))
+            cell?.contentView.addConstraint(NSLayoutConstraint.init(item: horizontalScrollView, attribute: NSLayoutAttribute.height, relatedBy: NSLayoutRelation.equal, toItem: nil, attribute: NSLayoutAttribute.notAnAttribute, multiplier: 1, constant: (cell?.frame.height)!))
   
-            cell.contentView.addConstraint(NSLayoutConstraint.init(item: horizontalScrollView, attribute: NSLayoutAttribute.width, relatedBy: NSLayoutRelation.equal, toItem:cell.contentView, attribute: .width, multiplier: 1, constant: 0))
+            cell?.contentView.addConstraint(NSLayoutConstraint.init(item: horizontalScrollView, attribute: NSLayoutAttribute.width, relatedBy: NSLayoutRelation.equal, toItem:cell?.contentView, attribute: .width, multiplier: 1, constant: 0))
             
 
 
             
         }
         else{
+            
+            
             //cell must be message cell
+            cell?.setMessageCell()
             
             
         }
      
-     return cell
+     return cell!
      }
  
     

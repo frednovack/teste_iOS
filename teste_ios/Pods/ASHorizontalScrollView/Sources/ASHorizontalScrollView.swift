@@ -28,7 +28,7 @@ public struct MarginSettings {
     public var leftMargin:CGFloat = 5.0
     
     /// the mini margin between items, it is the seed to calculate the actual margin which is not less than
-    public var miniMarginBetweenItems:CGFloat  = 27.0
+    public var miniMarginBetweenItems:CGFloat  = 10.0
     
     /// the mini width appear for last item of current screen, set it 0 if you don't want any part of the last item appear on the right
     public var miniAppearWidthOfLastItem:CGFloat = 20.0
@@ -183,7 +183,7 @@ open class ASHorizontalScrollView: UIScrollView, UIScrollViewDelegate {
     public var marginSettings_1366:MarginSettings?
     
     /// store the current items' margin
-    open var itemsMargin:CGFloat = 10.0
+    open var itemsMargin:CGFloat = 27.0
     
     /// the margin between left border and first item
     open var leftMarginPx:CGFloat {
