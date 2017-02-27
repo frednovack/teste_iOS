@@ -13,7 +13,6 @@ class GlobalTabViewController: UITabBarController {
     
     override func viewWillLayoutSubviews() {
         self.tabBar.frame = CGRect.init(x: 0, y: self.view.frame.height - (self.view.frame.height * 0.10), width: self.view.frame.width, height: (self.view.frame.height * 0.10))
-        print("Customized tab")
     }
 
     override func viewDidLoad() {

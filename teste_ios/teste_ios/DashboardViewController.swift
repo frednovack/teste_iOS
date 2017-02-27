@@ -1,33 +1,26 @@
 //
-//  FirstViewController.swift
+//  DashboardViewController.swift
 //  teste_ios
 //
-//  Created by Frederico Novack Amaral Pereira on 2/22/17.
+//  Created by Frederico Novack Amaral Pereira on 2/27/17.
 //  Copyright © 2017 frednovack. All rights reserved.
 //
 
 import UIKit
 import ASHorizontalScrollView
 
-
-
-class FirstViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class DashboardViewController: UIViewController, UITabBarDelegate, UITableViewDataSource {
     
-    @IBOutlet var contentTable: UITableView!
     let contacts = ["Pedro Matos", "Valéria Ciqueira", "Maria Carol", "Alan Turing", "Ada Lovelace", "W. Heisenberg", "Jesse J."]
+
     
     @IBOutlet var menuBtnItem: UIBarButtonItem!
     
-
-    @IBAction func TapMenuBtn(_ sender: Any) {
-        
-        menuBtnItem.action = #selector(SWRevealViewController.revealToggle(_:))
-        
-    }
     
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         //Configs all the screen style
         let thatOrangeColor = UIColor.init(colorLiteralRed: 0.815, green: 0.3098, blue: 0.047, alpha: 1.0)
         
@@ -43,21 +36,10 @@ class FirstViewController: UIViewController, UITableViewDataSource, UITableViewD
         
         //config of the rear menu
         
-       
-            menuBtnItem.target = self.revealViewController()
-            menuBtnItem.action = #selector(SWRevealViewController.revealToggle(_:))
-            self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
         
-        //config table view
-        let tableHeight  = self.view.frame.height - (179 + (self.tabBarController?.tabBar.frame.height)!)
-        
-        contentTable.frame = CGRect.init(x: 0, y: 179, width: self.view.frame.width, height: tableHeight)
-        
-        self.edgesForExtendedLayout = UIRectEdge.all
-        
-        contentTable.contentInset = UIEdgeInsetsMake(0, 0, (self.tabBarController?.tabBar.frame.height)!, 0)
-
-   
+        menuBtnItem.target = self.revealViewController()
+        menuBtnItem.action = #selector(SWRevealViewController.revealToggle(_:))
+        self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
     }
 
     override func didReceiveMemoryWarning() {
@@ -65,33 +47,29 @@ class FirstViewController: UIViewController, UITableViewDataSource, UITableViewD
         // Dispose of any resources that can be recreated.
     }
     
-     //MARK: - Table view data source
+    // MARK: - Table view data source
     
-         func numberOfSections(in tableView: UITableView) -> Int {
-            // #warning Incomplete implementation, return the number of sections
-            return 1
-        }
+     func numberOfSections(in tableView: UITableView) -> Int {
+        // #warning Incomplete implementation, return the number of sections
+        return 1
+    }
     
-        func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-            // #warning Incomplete implementation, return the number of rows
-            return 3
-        }
+     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        // #warning Incomplete implementation, return the number of rows
+        return 5
+    }
     
     
-    internal func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-
-        //First row must be ASHorizontalScrollView
-        let cell = tableView.dequeueReusableCell(withIdentifier: "messageCell", for: indexPath)   as? MessageCell
-        
-
-
-        
+      func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let messageCell = tableView.dequeueReusableCell(withIdentifier: "messageCell", for: indexPath) as? MessageCell
+        let contactsCell = tableView.dequeueReusableCell(withIdentifier: "contactsCell")
+        // Configure the cell...
         if indexPath.row == 0 {
             
             
-            let horizontalScrollView = ASHorizontalScrollView.init(frame: CGRect.init(x: 0, y: 0, width: self.view.frame.width, height: 100))
+            let horizontalScrollView = ASHorizontalScrollView.init(frame: CGRect.init(x: 0, y: 0, width: self.view.frame.width, height: (self.view.frame.height * 0.30)))
             
-
+            
             //sample code of how to use this scroll view
             horizontalScrollView.uniformItemSize = CGSize(width: 74.4, height: 74.4)
             
@@ -122,7 +100,7 @@ class FirstViewController: UIViewController, UITableViewDataSource, UITableViewD
                     choosedColor = UIColor.init(red: 0.639, green: 0.780, blue: 0.294, alpha: 1.0)
                 }
                 
-                //set chosen color to button and round it up 
+                //set chosen color to button and round it up
                 aButton.backgroundColor = choosedColor
                 
                 aButton.setContactName(contactName: contacts[i])
@@ -133,32 +111,35 @@ class FirstViewController: UIViewController, UITableViewDataSource, UITableViewD
             
             horizontalScrollView.addItems(buttons)
             
-            cell?.contentView.addSubview(horizontalScrollView)
-            horizontalScrollView.translatesAutoresizingMaskIntoConstraints = false
-            cell?.contentView.addConstraint(NSLayoutConstraint.init(item: horizontalScrollView, attribute: NSLayoutAttribute.height, relatedBy: NSLayoutRelation.equal, toItem: nil, attribute: NSLayoutAttribute.notAnAttribute, multiplier: 1, constant: (cell?.frame.height)!))
-  
-            cell?.contentView.addConstraint(NSLayoutConstraint.init(item: horizontalScrollView, attribute: NSLayoutAttribute.width, relatedBy: NSLayoutRelation.equal, toItem:cell?.contentView, attribute: .width, multiplier: 1, constant: 0))
             
-
-
+            contactsCell?.frame = CGRect.init(x: 0, y: 0, width: self.view.frame.width, height: self.view.frame.height * 0.30)
+            
+            contactsCell?.contentView.addSubview(horizontalScrollView)
+            horizontalScrollView.translatesAutoresizingMaskIntoConstraints = false
+            contactsCell?.contentView.addConstraint(NSLayoutConstraint.init(item: horizontalScrollView, attribute: NSLayoutAttribute.height, relatedBy: NSLayoutRelation.equal, toItem: nil, attribute: NSLayoutAttribute.notAnAttribute, multiplier: 1, constant: (contactsCell?.frame.height)!))
+            
+            contactsCell?.contentView.addConstraint(NSLayoutConstraint.init(item: horizontalScrollView, attribute: NSLayoutAttribute.width, relatedBy: NSLayoutRelation.equal, toItem:contactsCell?.contentView, attribute: .width, multiplier: 1, constant: 0))
+            
+            return contactsCell!
+            
             
         }
         else{
             
-            
+            messageCell?.frame = CGRect.init(x: 0, y: 0, width: self.view.frame.width, height: 115)
             //cell must be message cell
-            cell?.setMessageCell()
+            messageCell?.setMessageCell()
             
             
         }
+
+        
+    
+        
      
-     return cell!
+        return messageCell!
      }
     
-    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        return "Mensagens Recentes"
-    }
- 
     
     /*
      // Override to support conditional editing of the table view.
@@ -194,8 +175,19 @@ class FirstViewController: UIViewController, UITableViewDataSource, UITableViewD
      return true
      }
      */
+    
+    
+    
+    
 
+    /*
+    // MARK: - Navigation
 
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // Get the new view controller using segue.destinationViewController.
+        // Pass the selected object to the new view controller.
+    }
+    */
 
 }
-
