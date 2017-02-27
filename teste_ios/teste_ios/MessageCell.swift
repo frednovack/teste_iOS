@@ -42,7 +42,9 @@ class MessageCell: UITableViewCell {
         titleLabel?.text = "Como decorar uma festa infantil maravilhosa"
         
         
-        cashValueLabel = UILabel.init(frame: CGRect.init(x: (superViewFrame?.width)! - (100 + ((superViewFrame?.width)! * 0.23)), y: 90, width: 100, height: 15))
+        cashValueLabel = UILabel.init(frame: CGRect.init(x: (superViewFrame?.width)! - (100 + ((superViewFrame?.width)! * 0.04)), y: 90, width: 100, height: 17))
+        
+        cashValueLabel?.textAlignment = .right
 
         cashValueLabel?.text = "R$ 1035,00"
         
@@ -53,7 +55,7 @@ class MessageCell: UITableViewCell {
         //configuring aler icon
         //Alert icon for demonstration pruposes will ramdonly be generated
         if shouldAlertDisplay() {
-             alertIcon = UIImageView.init(frame: CGRect.init(x: (superViewFrame?.width)! - (30 + ((superViewFrame?.width)! * 0.23)), y: 14.5, width: 25, height: 25))
+             alertIcon = UIImageView.init(frame: CGRect.init(x: (superViewFrame?.width)! - (25 + ((superViewFrame?.width)! * 0.04)), y: 14.5, width: 25, height: 25))
             alertIcon?.image = UIImage.init(named: "ico_alert.png")
             
             self.addSubview(alertIcon!)
@@ -66,6 +68,15 @@ class MessageCell: UITableViewCell {
         self.addSubview(titleLabel!)
         
         print("HERE!")
+    }
+    
+    
+    func setGreybackground( flagGrey : Bool){
+        if flagGrey{
+            self.backgroundColor = UIColor.init(red: 0.95, green: 0.95, blue: 0.95, alpha: 1)
+        }else{
+            self.backgroundColor = UIColor.white
+        }
     }
     
     private func shouldAlertDisplay() -> Bool {

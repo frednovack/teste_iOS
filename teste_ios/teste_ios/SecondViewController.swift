@@ -11,6 +11,7 @@ import UIKit
 class SecondViewController: UIViewController, UITabBarDelegate, UITableViewDataSource {
     
     
+    @IBOutlet var messagesTable: UITableView!
     
     @IBOutlet var menuBtn: UIBarButtonItem!
     
@@ -37,6 +38,17 @@ class SecondViewController: UIViewController, UITabBarDelegate, UITableViewDataS
         menuBtn.target = self.revealViewController()
         menuBtn.action = #selector(SWRevealViewController.revealToggle(_:))
         self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
+        
+        
+        //config table view
+        let tableHeight  = self.view.frame.height - (self.tabBarController?.tabBar.frame.height)!
+        messagesTable.frame = CGRect.init(x: 0, y: 0, width: self.view.frame.width, height: tableHeight)
+        self.edgesForExtendedLayout = UIRectEdge.all
+        
+        messagesTable.contentInset = UIEdgeInsetsMake(0, 0, (self.tabBarController?.tabBar.frame.height)!, 0)
+        
+
+
     }
 
     override func didReceiveMemoryWarning() {
@@ -61,6 +73,13 @@ class SecondViewController: UIViewController, UITabBarDelegate, UITableViewDataS
      // Configure the cell...
         
         cell?.setMessageCell()
+        
+        //set all even indexpath.row as grey background
+        if indexPath.row % 2 == 0 {
+            cell?.setGreybackground(flagGrey: true)
+        }else{
+            cell?.setGreybackground(flagGrey: false)
+        }
      
      return cell!
      }
