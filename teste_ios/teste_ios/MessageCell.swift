@@ -13,6 +13,7 @@ class MessageCell: UITableViewCell {
     var cashValueLabel : UILabel? = nil
     var titleLabel : UILabel? = nil
     var alertIcon : UIImageView? = nil
+    var legendLabel : UILabel? = nil
     
 
     override func awakeFromNib() {
@@ -32,11 +33,14 @@ class MessageCell: UITableViewCell {
     //future method for passing the message to show
     func setMessageCell(){
         let superViewFrame = superview?.frame
+        
         print("Self Width > \(self.frame.width)")
         
         //organize the text label
-        titleLabel = UILabel.init(frame: CGRect.init(x: 30, y: 15.5, width: (superViewFrame?.width)! * 0.4, height: 60))
+        titleLabel = UILabel.init(frame: CGRect.init(x: 30, y: 15.5, width: (superViewFrame?.width)! * 0.5, height: 60))
+        
         titleLabel?.lineBreakMode = .byTruncatingTail
+        
         titleLabel?.numberOfLines = 2
        // writing on text label for prototype purposes
         titleLabel?.text = "Como decorar uma festa infantil maravilhosa"
@@ -62,8 +66,17 @@ class MessageCell: UITableViewCell {
            
         }
         
+        //Configure legend label
+        legendLabel = UILabel.init(frame: CGRect.init(x: 30, y: 80, width: (superViewFrame?.width)! * 0.45, height: 17))
+        
+        legendLabel?.textColor = UIColor.init(red: 0.32, green: 0.32, blue: 0.32, alpha: 0.7)
+        
+        legendLabel?.font = UIFont.init(name: "Helvetica", size: 12)
+        
+        legendLabel?.text = "id 30294080-11/01/2016"
         
         
+        self.addSubview(legendLabel!)
         self.addSubview(cashValueLabel!)
         self.addSubview(titleLabel!)
         
