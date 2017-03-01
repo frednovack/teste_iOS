@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		12947E6505AB76EFBCFC9C85 /* Pods_teste_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9894A8ADAA510D7C20725B98 /* Pods_teste_ios.framework */; };
+		B656693D1E665EC900E580C8 /* MessagesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B656693C1E665EC900E580C8 /* MessagesTableViewController.swift */; };
 		B65C619F1E622A1500A65F3A /* GlobalTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65C619E1E622A1500A65F3A /* GlobalTabViewController.swift */; };
 		B65C61A11E62300700A65F3A /* ico_mensagem_menu@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B65C61A01E62300700A65F3A /* ico_mensagem_menu@2x.png */; };
 		B65C61A31E626D5500A65F3A /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65C61A21E626D5500A65F3A /* CustomButton.swift */; };
@@ -39,6 +40,7 @@
 		37DE611AF4287E0C99CA3DD4 /* Pods-teste_ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-teste_ios.debug.xcconfig"; path = "Pods/Target Support Files/Pods-teste_ios/Pods-teste_ios.debug.xcconfig"; sourceTree = "<group>"; };
 		47D04A1481D0BAAF7A8C1F29 /* Pods-teste_ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-teste_ios.release.xcconfig"; path = "Pods/Target Support Files/Pods-teste_ios/Pods-teste_ios.release.xcconfig"; sourceTree = "<group>"; };
 		9894A8ADAA510D7C20725B98 /* Pods_teste_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_teste_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B656693C1E665EC900E580C8 /* MessagesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessagesTableViewController.swift; sourceTree = "<group>"; };
 		B65C619E1E622A1500A65F3A /* GlobalTabViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalTabViewController.swift; sourceTree = "<group>"; };
 		B65C61A01E62300700A65F3A /* ico_mensagem_menu@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ico_mensagem_menu@2x.png"; path = "teste_ios/barra_inferior/ico_mensagem_menu@2x.png"; sourceTree = "<group>"; };
 		B65C61A21E626D5500A65F3A /* CustomButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
@@ -169,6 +171,7 @@
 				B6785B471E6119BC00E11CA9 /* MenuTableViewController.swift */,
 				B65C619E1E622A1500A65F3A /* GlobalTabViewController.swift */,
 				B669F6711E64BF8A00D4D628 /* DashboardViewController.swift */,
+				B656693C1E665EC900E580C8 /* MessagesTableViewController.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -332,6 +335,7 @@
 				B661349F1E5E695C00C52BCA /* SecondViewController.swift in Sources */,
 				B6785B461E61146B00E11CA9 /* TableViewController.swift in Sources */,
 				B6785B481E6119BC00E11CA9 /* MenuTableViewController.swift in Sources */,
+				B656693D1E665EC900E580C8 /* MessagesTableViewController.swift in Sources */,
 				B661349B1E5E695C00C52BCA /* AppDelegate.swift in Sources */,
 				B65C61A31E626D5500A65F3A /* CustomButton.swift in Sources */,
 				B661349D1E5E695C00C52BCA /* FirstViewController.swift in Sources */,
