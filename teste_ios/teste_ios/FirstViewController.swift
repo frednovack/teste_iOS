@@ -16,6 +16,8 @@ class FirstViewController: UIViewController, UITableViewDataSource, UITableViewD
     @IBOutlet var contentTable: UITableView!
     let contacts = ["Pedro Matos", "Valéria Ciqueira", "Maria Carol", "Alan Turing", "Ada Lovelace", "W. Heisenberg", "Jesse J."]
     
+    let subViewTag = 1618
+    
     @IBOutlet var menuBtnItem: UIBarButtonItem!
     
 
@@ -88,7 +90,9 @@ class FirstViewController: UIViewController, UITableViewDataSource, UITableViewD
         
         if indexPath.row == 0 {
             
-            
+            cell?.contentView.subviews.forEach{
+                subview in subview.removeFromSuperview()
+            }
             let horizontalScrollView = ASHorizontalScrollView.init(frame: CGRect.init(x: 0, y: 0, width: self.view.frame.width, height: 100))
             
 
