@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		12947E6505AB76EFBCFC9C85 /* Pods_teste_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9894A8ADAA510D7C20725B98 /* Pods_teste_ios.framework */; };
 		B656693D1E665EC900E580C8 /* MessagesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B656693C1E665EC900E580C8 /* MessagesTableViewController.swift */; };
+		B65669421E66671F00E580C8 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = B65669441E66671F00E580C8 /* Localizable.strings */; };
 		B65C619F1E622A1500A65F3A /* GlobalTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65C619E1E622A1500A65F3A /* GlobalTabViewController.swift */; };
 		B65C61A11E62300700A65F3A /* ico_mensagem_menu@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B65C61A01E62300700A65F3A /* ico_mensagem_menu@2x.png */; };
 		B65C61A31E626D5500A65F3A /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65C61A21E626D5500A65F3A /* CustomButton.swift */; };
@@ -43,6 +44,8 @@
 		B656693C1E665EC900E580C8 /* MessagesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessagesTableViewController.swift; sourceTree = "<group>"; };
 		B656693E1E66632600E580C8 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Main.strings"; sourceTree = "<group>"; };
 		B656693F1E66632600E580C8 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		B65669431E66671F00E580C8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		B65669451E66672E00E580C8 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		B65C619E1E622A1500A65F3A /* GlobalTabViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalTabViewController.swift; sourceTree = "<group>"; };
 		B65C61A01E62300700A65F3A /* ico_mensagem_menu@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ico_mensagem_menu@2x.png"; path = "teste_ios/barra_inferior/ico_mensagem_menu@2x.png"; sourceTree = "<group>"; };
 		B65C61A21E626D5500A65F3A /* CustomButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
@@ -134,6 +137,7 @@
 				B66134A81E5E695C00C52BCA /* Info.plist */,
 				B6785B451E61146B00E11CA9 /* TableViewController.swift */,
 				B65C61A41E635C9D00A65F3A /* Custom Components */,
+				B65669441E66671F00E580C8 /* Localizable.strings */,
 			);
 			path = teste_ios;
 			sourceTree = "<group>";
@@ -245,6 +249,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"pt-BR",
 			);
 			mainGroup = B661348E1E5E695B00C52BCA;
 			productRefGroup = B66134981E5E695C00C52BCA /* Products */;
@@ -274,6 +279,7 @@
 				B6785B551E611CAB00E11CA9 /* ico_minha_conta.png in Resources */,
 				B65C61A11E62300700A65F3A /* ico_mensagem_menu@2x.png in Resources */,
 				B6785B521E611CAB00E11CA9 /* ico_dashboard.png in Resources */,
+				B65669421E66671F00E580C8 /* Localizable.strings in Resources */,
 				B66134C41E5E7A9D00C52BCA /* menu in Resources */,
 				B6785B561E611CAB00E11CA9 /* ico_minhas_vendas.png in Resources */,
 			);
@@ -351,6 +357,15 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		B65669441E66671F00E580C8 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B65669431E66671F00E580C8 /* en */,
+				B65669451E66672E00E580C8 /* pt-BR */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		B66134A01E5E695C00C52BCA /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

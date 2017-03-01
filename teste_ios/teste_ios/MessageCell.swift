@@ -43,7 +43,7 @@ class MessageCell: UITableViewCell {
         
         titleLabel?.numberOfLines = 2
        // writing on text label for prototype purposes
-        titleLabel?.text = "Como decorar uma festa infantil maravilhosa"
+        titleLabel?.text = NSLocalizedString("Como decorar uma festa infantil maravilhosa", comment: "")
         
         
         cashValueLabel = UILabel.init(frame: CGRect.init(x: (superViewFrame?.width)! - (100 + ((superViewFrame?.width)! * 0.04)), y: 90, width: 100, height: 17))

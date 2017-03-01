@@ -160,7 +160,7 @@ class FirstViewController: UIViewController, UITableViewDataSource, UITableViewD
      }
     
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        return "Mensagens Recentes"
+        return NSLocalizedString("Mensagens Recentes", comment: "")
     }
  
     

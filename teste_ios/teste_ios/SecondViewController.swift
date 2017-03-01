@@ -24,7 +24,7 @@ class SecondViewController: UIViewController, UITabBarDelegate, UITableViewDataS
         
         self.view.backgroundColor = thatBlueColor
         
-        self.title = "Minhas Vendas"
+        self.title = NSLocalizedString("Minhas Vendas", comment: "")
         
         self.navigationController?.navigationBar.barTintColor = thatBlueColor
         

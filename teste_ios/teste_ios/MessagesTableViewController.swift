@@ -24,7 +24,7 @@ class MessagesTableViewController: UITableViewController {
         
         self.view.backgroundColor = thatYellowColor
         
-        self.title = "Mensagens"
+        self.title = NSLocalizedString("Mensagens", comment: "")
         
         self.navigationController?.navigationBar.barTintColor = thatYellowColor
         
