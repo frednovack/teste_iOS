@@ -72,15 +72,11 @@
                         <color key="backgroundColor" red="0.81568627450980391" green="0.30980392156862746" blue="0.16470588235294117" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="XfD-Je-B8e">
-                        <barButtonItem key="leftBarButtonItem" systemItem="bookmarks" id="De9-da-Gwn">
-                            <connections>
-                                <action selector="TapMenuBtn:" destination="9pv-A4-QxB" id="peY-0y-OpT"/>
-                            </connections>
-                        </barButtonItem>
+                        <barButtonItem key="leftBarButtonItem" image="Menu-26.png" id="8jj-lx-fgX"/>
                     </navigationItem>
                     <connections>
                         <outlet property="contentTable" destination="jmi-3n-h0X" id="Akj-CG-suI"/>
-                        <outlet property="menuBtnItem" destination="De9-da-Gwn" id="bM2-7I-fcR"/>
+                        <outlet property="menuBtnItem" destination="8jj-lx-fgX" id="41j-Ew-N0Y"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
@@ -122,7 +118,7 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="ZJh-Zy-6wC">
-                        <barButtonItem key="leftBarButtonItem" title="Item" id="syu-KW-RaQ"/>
+                        <barButtonItem key="leftBarButtonItem" image="Menu-26.png" id="syu-KW-RaQ"/>
                     </navigationItem>
                     <connections>
                         <outlet property="menuBtn" destination="syu-KW-RaQ" id="dI9-xb-jYU"/>
@@ -417,7 +413,7 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="5R3-jJ-PES">
-                        <barButtonItem key="leftBarButtonItem" title="Item" id="fZ0-vE-tQs"/>
+                        <barButtonItem key="leftBarButtonItem" image="Menu-26.png" id="fZ0-vE-tQs"/>
                     </navigationItem>
                     <connections>
                         <outlet property="menuBtnItem" destination="fZ0-vE-tQs" id="bTr-kY-G8p"/>
@@ -508,6 +504,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Menu-26.png" width="26" height="26"/>
         <image name="ico_afiliados.png" width="178" height="178"/>
         <image name="ico_dashboard.png" width="178" height="178"/>
         <image name="ico_lupa.png" width="156" height="156"/>
