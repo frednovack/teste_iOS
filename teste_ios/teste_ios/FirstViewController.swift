@@ -16,16 +16,9 @@ class FirstViewController: UIViewController, UITableViewDataSource, UITableViewD
     @IBOutlet var contentTable: UITableView!
     let contacts = ["Pedro Matos", "Valéria Ciqueira", "Maria Carol", "Alan Turing", "Ada Lovelace", "W. Heisenberg", "Jesse J."]
     
-    let subViewTag = 1618
     
     @IBOutlet var menuBtnItem: UIBarButtonItem!
     
-
-    @IBAction func TapMenuBtn(_ sender: Any) {
-        
-        menuBtnItem.action = #selector(SWRevealViewController.revealToggle(_:))
-        
-    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -44,11 +37,9 @@ class FirstViewController: UIViewController, UITableViewDataSource, UITableViewD
         self.navigationController?.navigationBar.isTranslucent = false
         
         //config of the rear menu
-        
-       
-            menuBtnItem.target = self.revealViewController()
-            menuBtnItem.action = #selector(SWRevealViewController.revealToggle(_:))
-            self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
+        menuBtnItem.target = self.revealViewController()
+        menuBtnItem.action = #selector(SWRevealViewController.revealToggle(_:))
+        self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
         
         //config table view
         let tableHeight  = self.view.frame.height - (179 + (self.tabBarController?.tabBar.frame.height)!)
@@ -90,6 +81,7 @@ class FirstViewController: UIViewController, UITableViewDataSource, UITableViewD
         
         if indexPath.row == 0 {
             
+            //removes all the subviews to prevent previous cell of showing previous contacts
             cell?.contentView.subviews.forEach{
                 subview in subview.removeFromSuperview()
             }

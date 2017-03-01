@@ -11,6 +11,8 @@
 		B656693D1E665EC900E580C8 /* MessagesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B656693C1E665EC900E580C8 /* MessagesTableViewController.swift */; };
 		B65669421E66671F00E580C8 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = B65669441E66671F00E580C8 /* Localizable.strings */; };
 		B656694D1E666E3600E580C8 /* Menu-26.png in Resources */ = {isa = PBXBuildFile; fileRef = B656694C1E666E3600E580C8 /* Menu-26.png */; };
+		B65669501E666F7A00E580C8 /* ico_minhas_vendas_menu@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B656694E1E666F7A00E580C8 /* ico_minhas_vendas_menu@2x.png */; };
+		B65669511E666F7A00E580C8 /* ico_notificacoes_menu@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B656694F1E666F7A00E580C8 /* ico_notificacoes_menu@2x.png */; };
 		B65C619F1E622A1500A65F3A /* GlobalTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65C619E1E622A1500A65F3A /* GlobalTabViewController.swift */; };
 		B65C61A11E62300700A65F3A /* ico_mensagem_menu@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B65C61A01E62300700A65F3A /* ico_mensagem_menu@2x.png */; };
 		B65C61A31E626D5500A65F3A /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65C61A21E626D5500A65F3A /* CustomButton.swift */; };
@@ -48,6 +50,8 @@
 		B65669431E66671F00E580C8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		B65669451E66672E00E580C8 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		B656694C1E666E3600E580C8 /* Menu-26.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Menu-26.png"; path = "teste_ios/Menu-26.png"; sourceTree = "<group>"; };
+		B656694E1E666F7A00E580C8 /* ico_minhas_vendas_menu@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ico_minhas_vendas_menu@2x.png"; path = "teste_ios/ico_minhas_vendas_menu@2x.png"; sourceTree = "<group>"; };
+		B656694F1E666F7A00E580C8 /* ico_notificacoes_menu@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ico_notificacoes_menu@2x.png"; path = "teste_ios/ico_notificacoes_menu@2x.png"; sourceTree = "<group>"; };
 		B65C619E1E622A1500A65F3A /* GlobalTabViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalTabViewController.swift; sourceTree = "<group>"; };
 		B65C61A01E62300700A65F3A /* ico_mensagem_menu@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ico_mensagem_menu@2x.png"; path = "teste_ios/barra_inferior/ico_mensagem_menu@2x.png"; sourceTree = "<group>"; };
 		B65C61A21E626D5500A65F3A /* CustomButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
@@ -155,6 +159,8 @@
 		B66134B81E5E7A6A00C52BCA /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				B656694E1E666F7A00E580C8 /* ico_minhas_vendas_menu@2x.png */,
+				B656694F1E666F7A00E580C8 /* ico_notificacoes_menu@2x.png */,
 				B656694C1E666E3600E580C8 /* Menu-26.png */,
 				B65C61A01E62300700A65F3A /* ico_mensagem_menu@2x.png */,
 				B6785B491E611CAB00E11CA9 /* ico_afiliados.png */,
@@ -274,11 +280,13 @@
 				B6785B581E611CAB00E11CA9 /* ico_sobre_o_app.png in Resources */,
 				B6785B511E611CAB00E11CA9 /* ico_afiliados.png in Resources */,
 				B66134A71E5E695C00C52BCA /* LaunchScreen.storyboard in Resources */,
+				B65669511E666F7A00E580C8 /* ico_notificacoes_menu@2x.png in Resources */,
 				B66134A41E5E695C00C52BCA /* Assets.xcassets in Resources */,
 				B6785B541E611CAB00E11CA9 /* ico_meus_produtos.png in Resources */,
 				B6785B571E611CAB00E11CA9 /* ico_notificacoes.png in Resources */,
 				B66134A21E5E695C00C52BCA /* Main.storyboard in Resources */,
 				B6785B531E611CAB00E11CA9 /* ico_mensagem.png in Resources */,
+				B65669501E666F7A00E580C8 /* ico_minhas_vendas_menu@2x.png in Resources */,
 				B6785B551E611CAB00E11CA9 /* ico_minha_conta.png in Resources */,
 				B65C61A11E62300700A65F3A /* ico_mensagem_menu@2x.png in Resources */,
 				B6785B521E611CAB00E11CA9 /* ico_dashboard.png in Resources */,

@@ -449,7 +449,7 @@
         <scene sceneID="8p9-hy-ozI">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ylm-Re-ncu" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="First" image="ico_notificacoes.png" id="acW-dT-cKf"/>
+                    <tabBarItem key="tabBarItem" title="First" image="ico_notificacoes_menu.png" id="acW-dT-cKf"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="LDC-Jg-0w5">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -468,7 +468,7 @@
         <scene sceneID="uPn-zO-fAn">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="P2b-zx-e12" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Second" image="ico_minhas_vendas.png" id="cPa-gy-q4n"/>
+                    <tabBarItem key="tabBarItem" title="Second" image="ico_minhas_vendas_menu.png" id="cPa-gy-q4n"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="tWH-wb-V6I">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -513,7 +513,9 @@
         <image name="ico_meus_produtos.png" width="178" height="178"/>
         <image name="ico_minha_conta.png" width="178" height="178"/>
         <image name="ico_minhas_vendas.png" width="178" height="178"/>
+        <image name="ico_minhas_vendas_menu.png" width="84" height="84"/>
         <image name="ico_notificacoes.png" width="178" height="178"/>
+        <image name="ico_notificacoes_menu.png" width="84" height="84"/>
         <image name="ico_sobre_o_app.png" width="178" height="178"/>
     </resources>
 </document>
