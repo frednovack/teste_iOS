@@ -1,0 +1,60 @@
+
+/* Class = "UILabel"; text = "Minhas Vendas"; ObjectID = "9lZ-Sy-aKF"; */
+"9lZ-Sy-aKF.text" = "Minhas Vendas";
+
+/* Class = "UILabel"; text = "Dashboard"; ObjectID = "FeE-ys-PaY"; */
+"FeE-ys-PaY.text" = "Dashboard";
+
+/* Class = "UILabel"; text = "Mensagens"; ObjectID = "Gnk-vr-x0z"; */
+"Gnk-vr-x0z.text" = "Mensagens";
+
+/* Class = "UILabel"; text = "Seu saldo atual é de:"; ObjectID = "Hx0-rO-muP"; */
+"Hx0-rO-muP.text" = "Seu saldo atual é de:";
+
+/* Class = "UILabel"; text = "R$2.152,23"; ObjectID = "VtY-ID-7nJ"; */
+"VtY-ID-7nJ.text" = "R$2.152,23";
+
+/* Class = "UILabel"; text = "Afiliados"; ObjectID = "WT7-lu-83s"; */
+"WT7-lu-83s.text" = "Afiliados";
+
+/* Class = "UILabel"; text = "Notificações"; ObjectID = "Z1Y-Xh-5LB"; */
+"Z1Y-Xh-5LB.text" = "Notificações";
+
+/* Class = "UILabel"; text = "+50"; ObjectID = "aOc-1F-ZvA"; */
+"aOc-1F-ZvA.text" = "+50";
+
+/* Class = "UITabBarItem"; title = "First"; ObjectID = "acW-dT-cKf"; */
+"acW-dT-cKf.title" = "First";
+
+/* Class = "UITabBarItem"; title = "Second"; ObjectID = "cPa-gy-q4n"; */
+"cPa-gy-q4n.title" = "Second";
+
+/* Class = "UILabel"; text = "ricardo@email.com"; ObjectID = "caE-2J-z0Q"; */
+"caE-2J-z0Q.text" = "ricardo@email.com";
+
+/* Class = "UIBarButtonItem"; title = "Item"; ObjectID = "fZ0-vE-tQs"; */
+"fZ0-vE-tQs.title" = "Item";
+
+/* Class = "UILabel"; text = "RICARDO AC"; ObjectID = "jbW-hd-heq"; */
+"jbW-hd-heq.text" = "RICARDO AC";
+
+/* Class = "UILabel"; text = "Sobre o App"; ObjectID = "lmU-P6-3CH"; */
+"lmU-P6-3CH.text" = "Sobre o App";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "mfa-mR-7mR"; */
+"mfa-mR-7mR.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Meus Produtos"; ObjectID = "nRh-DE-m3P"; */
+"nRh-DE-m3P.text" = "Meus Produtos";
+
+/* Class = "UILabel"; text = "Minha Conta"; ObjectID = "rYc-3C-knq"; */
+"rYc-3C-knq.text" = "Minha Conta";
+
+/* Class = "UIBarButtonItem"; title = "Item"; ObjectID = "syu-KW-RaQ"; */
+"syu-KW-RaQ.title" = "Item";
+
+/* Class = "UITabBarItem"; title = "Item"; ObjectID = "tQj-am-7Q8"; */
+"tQj-am-7Q8.title" = "Item";
+
+/* Class = "UILabel"; text = "15"; ObjectID = "xKK-95-hfr"; */
+"xKK-95-hfr.text" = "15";

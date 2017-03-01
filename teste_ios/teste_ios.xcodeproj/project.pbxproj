@@ -41,6 +41,8 @@
 		47D04A1481D0BAAF7A8C1F29 /* Pods-teste_ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-teste_ios.release.xcconfig"; path = "Pods/Target Support Files/Pods-teste_ios/Pods-teste_ios.release.xcconfig"; sourceTree = "<group>"; };
 		9894A8ADAA510D7C20725B98 /* Pods_teste_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_teste_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B656693C1E665EC900E580C8 /* MessagesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessagesTableViewController.swift; sourceTree = "<group>"; };
+		B656693E1E66632600E580C8 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Main.strings"; sourceTree = "<group>"; };
+		B656693F1E66632600E580C8 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		B65C619E1E622A1500A65F3A /* GlobalTabViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalTabViewController.swift; sourceTree = "<group>"; };
 		B65C61A01E62300700A65F3A /* ico_mensagem_menu@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ico_mensagem_menu@2x.png"; path = "teste_ios/barra_inferior/ico_mensagem_menu@2x.png"; sourceTree = "<group>"; };
 		B65C61A21E626D5500A65F3A /* CustomButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
@@ -353,6 +355,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				B66134A11E5E695C00C52BCA /* Base */,
+				B656693E1E66632600E580C8 /* pt-BR */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -361,6 +364,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				B66134A61E5E695C00C52BCA /* Base */,
+				B656693F1E66632600E580C8 /* pt-BR */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -372,6 +376,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -421,6 +426,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
