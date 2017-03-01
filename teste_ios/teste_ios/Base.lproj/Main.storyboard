@@ -393,10 +393,10 @@
             </objects>
             <point key="canvasLocation" x="0.0" y="0.0"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Messages Table View Controller-->
         <scene sceneID="mmL-PJ-ZS0">
             <objects>
-                <tableViewController id="lRG-YA-AZF" sceneMemberID="viewController">
+                <tableViewController id="lRG-YA-AZF" customClass="MessagesTableViewController" customModule="teste_ios" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="115" sectionHeaderHeight="28" sectionFooterHeight="28" id="fq9-ET-Qon">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -416,7 +416,12 @@
                             <outlet property="delegate" destination="lRG-YA-AZF" id="g9b-7M-12O"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="5R3-jJ-PES"/>
+                    <navigationItem key="navigationItem" id="5R3-jJ-PES">
+                        <barButtonItem key="leftBarButtonItem" title="Item" id="fZ0-vE-tQs"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="menuBtnItem" destination="fZ0-vE-tQs" id="bTr-kY-G8p"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ziE-T3-UsI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -12,10 +12,45 @@ import ASHorizontalScrollView
 class MessagesTableViewController: UITableViewController {
     
     let contacts = ["Pedro Matos", "Valéria Ciqueira", "Maria Carol", "Alan Turing", "Ada Lovelace", "W. Heisenberg", "Jesse J."]
+    
+    @IBOutlet var menuBtnItem: UIBarButtonItem!
+    
 
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        //Configs all the screen style
+        let thatYellowColor = UIColor.init(colorLiteralRed: 0.905, green: 0.678, blue: 0.27, alpha: 1.0)
+        
+        self.view.backgroundColor = thatYellowColor
+        
+        self.title = "Mensagens"
+        
+        self.navigationController?.navigationBar.barTintColor = thatYellowColor
+        
+        self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName : UIColor.white]
+        
+        self.navigationController?.navigationBar.isTranslucent = false
+        
+        //config of the rear menu
+        
+        
+        menuBtnItem.target = self.revealViewController()
+        menuBtnItem.action = #selector(SWRevealViewController.revealToggle(_:))
+        self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
+        
+//        //config table view
+//        let tableHeight  = self.view.frame.height - (179 + (self.tabBarController?.tabBar.frame.height)!)
+//        
+//        contentTable.frame = CGRect.init(x: 0, y: 179, width: self.view.frame.width, height: tableHeight)
+//        
+//        self.edgesForExtendedLayout = UIRectEdge.all
+//        
+//        contentTable.contentInset = UIEdgeInsetsMake(0, 0, (self.tabBarController?.tabBar.frame.height)!, 0)
+
+        
+        
+        
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -48,7 +83,7 @@ class MessagesTableViewController: UITableViewController {
         // Configure the cell...
         
         
-        cell?.contentView.subviews.forEach{
+        cell.contentView.subviews.forEach{
             subview in subview.removeFromSuperview()
         }
         let horizontalScrollView = ASHorizontalScrollView.init(frame: CGRect.init(x: 0, y: 0, width: self.view.frame.width, height: 100))
@@ -95,11 +130,11 @@ class MessagesTableViewController: UITableViewController {
         
         horizontalScrollView.addItems(buttons)
         
-        cell?.contentView.addSubview(horizontalScrollView)
+        cell.contentView.addSubview(horizontalScrollView)
         horizontalScrollView.translatesAutoresizingMaskIntoConstraints = false
-        cell?.contentView.addConstraint(NSLayoutConstraint.init(item: horizontalScrollView, attribute: NSLayoutAttribute.height, relatedBy: NSLayoutRelation.equal, toItem: nil, attribute: NSLayoutAttribute.notAnAttribute, multiplier: 1, constant: (cell?.frame.height)!))
+        cell.contentView.addConstraint(NSLayoutConstraint.init(item: horizontalScrollView, attribute: NSLayoutAttribute.height, relatedBy: NSLayoutRelation.equal, toItem: nil, attribute: NSLayoutAttribute.notAnAttribute, multiplier: 1, constant: (cell.frame.height)))
         
-        cell?.contentView.addConstraint(NSLayoutConstraint.init(item: horizontalScrollView, attribute: NSLayoutAttribute.width, relatedBy: NSLayoutRelation.equal, toItem:cell?.contentView, attribute: .width, multiplier: 1, constant: 0))
+        cell.contentView.addConstraint(NSLayoutConstraint.init(item: horizontalScrollView, attribute: NSLayoutAttribute.width, relatedBy: NSLayoutRelation.equal, toItem:cell.contentView, attribute: .width, multiplier: 1, constant: 0))
         
 
         
